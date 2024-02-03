@@ -1,4 +1,7 @@
-import { PageContainer, Bar } from '@/components/index';
+'use client';
+
+import 'blazing-layout'
+import { PageContainer, Bar, Card } from '@/components/index';
 
 export default function Home(): JSX.Element {
   return (
@@ -6,8 +9,33 @@ export default function Home(): JSX.Element {
       <Bar margintop='20px'>
         <p>dsf</p>
       </Bar>
-      <h1>Home</h1>
-      <p>This is paragraph.</p>
-    </PageContainer>
+
+      <div className='rbc'>
+        <Card margintop='20px'>
+          <h1>Card</h1>
+          <p>This is paragraph.</p>
+        </Card>
+        <Card margintop='20px'>
+          <h1>Card</h1>
+          <p>This is paragraph.</p>
+        </Card>
+        <Card margintop='20px'>
+          <h1>Card</h1>
+          <p>This is paragraph.</p>
+        </Card>
+      </div>
+      <div className='rbc'>
+        <Card margintop='20px'>
+          <h1>Card</h1>
+          <p>This is paragraph.</p>
+        </Card>
+        <Card margintop='20px'>
+          <h1>Card</h1>
+          <p>This is paragraph.</p>
+        </Card>
+      </div>
+
+
+    </PageContainer >
   );
 }
