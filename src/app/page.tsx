@@ -7,7 +7,7 @@ export default function Home(): JSX.Element {
   return (
     <PageContainer paddingtop="100px">
       <Bar margintop='20px' sticky={true}>
-        <div className='rbc h100'>
+        <div className='rbc'>
           <p>aaaaa</p>
           <p>ccccc</p>
           <p>ddddd</p>
@@ -18,9 +18,18 @@ export default function Home(): JSX.Element {
         <Card margintop='20px'>
           <h1>Card</h1>
           <p>This is paragraph.</p>
+          <p>This is paragraph.</p>
+          <p>This is paragraph.</p>
+          <p>This is paragraph.</p>
+          <p>This is paragraph.</p>
         </Card>
         <Card margintop='20px'>
           <h1>Card</h1>
+          <p>This is paragraph.</p>
+          <p>This is paragraph.</p>
+          <p>This is paragraph.</p>
+          <p>This is paragraph.</p>
+          <p>This is paragraph.</p>
           <p>This is paragraph.</p>
         </Card>
         <Card margintop='20px'>
