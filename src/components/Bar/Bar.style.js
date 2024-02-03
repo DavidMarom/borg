@@ -6,10 +6,15 @@ export const BarContainer = styled.div`
   width: 100%;
   
   background-color: rgba(0, 0, 0, 0);
-  backdrop-filter: blur(15px);
+  backdrop-filter: blur(4px);
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
 
   margin-top: ${({ margintop }) => margintop};
+
+  position: ${({ sticky }) => (sticky ? 'fixed' : 'relative')};
+  top: ${({ sticky }) => (sticky ? '0' : 'none')};
+  z-index: 100;
+
 
 `;
 

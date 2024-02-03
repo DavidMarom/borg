@@ -5,16 +5,18 @@ import PropTypes from "prop-types"
 import { Container } from "./PageContainer.style"
 
 export default function PageContainer({
-    children
+    children,
+    paddingtop = "0px",
 }) {
 
     return (
-        <Container>
+        <Container paddingtop={paddingtop}>
             {children}
         </Container>
     )
 }
 
 PageContainer.propTypes = {
-    children: PropTypes.node.isRequired
+    children: PropTypes.node.isRequired,
+    paddingtop: PropTypes.string,
 }

@@ -5,9 +5,13 @@ import { PageContainer, Bar, Card } from '@/components/index';
 
 export default function Home(): JSX.Element {
   return (
-    <PageContainer>
-      <Bar margintop='20px'>
-        <p>dsf</p>
+    <PageContainer paddingtop="100px">
+      <Bar margintop='20px' sticky={true}>
+        <div className='rbc h100'>
+          <p>aaaaa</p>
+          <p>ccccc</p>
+          <p>ddddd</p>
+        </div>
       </Bar>
 
       <div className='rbc'>
