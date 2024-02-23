@@ -8,13 +8,15 @@ import { StyleSheetManager } from 'styled-components';
 export default function Card({
     children,
     margintop = "0px",
+    delay = 0.3
 }) {
 
     return (
-        <StyleSheetManager shouldForwardProp={(prop) => prop !== 'margintop'}>
+        <StyleSheetManager shouldForwardProp={(prop) => prop !== 'margintop' || prop !== 'delay' }>
             <CardContainer
                 margintop={margintop}
-                
+                delay={delay}
+
             >
                 {children}
             </CardContainer>

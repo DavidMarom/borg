@@ -9,15 +9,30 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Kode";
+  src: url("../../public/fonts/KodeMono-VariableFont_wght.ttf") format("truetype");
+  /* src: url("../../public/fonts/KodeMono-Regular.ttf") format("truetype"); */
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   margin: 0;
   padding: 0;
   background-color: #000000;
 }
 
+
 p {
+  /* font-family: 'Kode', sans-serif; */
+  font-family: 'Kode', monospace;
+  color: rgb(43, 237, 237);
+  
   margin: 0;
   padding: 0;
+  font-size: .8rem;
+  font-weight: 100;
 }
 
 h1,
@@ -26,12 +41,24 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: 'Kode', monospace;
+  color: rgb(43, 237, 237);
+
   margin: 0;
+  margin-bottom: .4rem;
   padding: 0;
-  font-weight: 900;
+  font-weight: 100;
 }
 
 .h500px{
   height: 600px !important;
   background-color: #ff0000;
+}
+
+.h80px{
+  height: 80px !important;
+}
+
+.w200px{
+  width: 300px !important;
 }

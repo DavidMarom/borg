@@ -28,12 +28,14 @@ export const CardContainer = styled.div`
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
   margin-top: ${({ margintop }) => margintop};
   border: 1px solid #2beded22;
-
+  
   overflow: hidden;
   overflow-y: auto;
-
-  animation: fadeOut .4s;
+  
+  animation-duration: ${props => props.delay}s;
   animation-name: ${fadeIn};
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 
 
 `;
